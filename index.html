@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-b from-gray-900 to-black text-white h-screen flex flex-col overflow-hidden">
+    <svg class="background-v" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3B82F6; stop-opacity:1" /> <!-- Light Blue -->
+                <stop offset="100%" style="stop-color:#9333EA; stop-opacity:1" /> <!-- Purple -->
+            </linearGradient>
+        </defs>
+        <text x="50%" y="50%" font-size="100" font-weight="bold" fill="url(#gradient)"
+            font-family="'Brush Script MT', cursive" text-anchor="middle" dominant-baseline="middle">
+            VR
+        </text>
+    </svg>
+
+    <!-- Hero Section -->
+    <header class="flex flex-wrap justify-between items-center p-6">
+        <div class="text-2xl sm:text-3xl md:text-5xl font-extrabold italic pl-2 sm:pl-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 drop-shadow-lg">
+            My Portfolio
+        </div>
+        
+        <a href="https://telegram.org/dl" target="_blank"
+            class="text-white text-2xl md:text-3xl icon-effect pr-4 md:pr-20">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+    </header>
+
+    <!-- Social Media Links -->
+    <div class="fixed top-1/2 right-2 md:right-6 transform -translate-y-1/2 flex flex-col space-y-3">
+        <a href="https://www.linkedin.com/in/vivek-singh-rawat-4640b9245?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX9mLGGBzTo2jS2hm2WxI7w%3D%3D" target="_blank" class="text-white text-2xl md:text-3xl icon-effect">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/vivek-sys" target="_blank" class="text-white text-2xl md:text-3xl icon-effect">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:vr595440@gmail.com" class="text-white text-2xl md:text-3xl icon-effect">
+            <i class="fa-solid fa-envelope"></i>
+        </a>        
+        <a href="https://www.instagram.com/invites/contact/?igsh=1sy9h9hnjpfw0&utm_content=sr0v4bg" target="_blank" class="text-white text-2xl md:text-3xl icon-effect">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Main Section -->
+    <section class="hero text-center py-12 md:py-20 flex-grow">
+        <h1
+            class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">
+            Vivek Rawat
+        </h1>
+        <p class="text-lg md:text-xl mt-4">Frontend Developer</p>
+        <a href="javascript:void(0);" onclick="toggleModal('aboutModal')"
+            class="mt-6 inline-block bg-blue-500 px-5 md:px-6 py-2 rounded-full text-white hover:bg-blue-600 text-lg md:text-xl">
+            About Me
+        </a>
+    </section>
+
+    <!-- About Me Modal -->
+    <div id="aboutModal"
+        class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden p-4 transition-opacity duration-300">
+        <div
+            class="bg-gray-900 text-white p-6 md:p-8 rounded-lg shadow-lg w-full md:w-3/4 max-w-4xl relative flex flex-col md:flex-row">
+
+            <!-- Left Section (Text) -->
+            <div class="md:w-2/3 p-4">
+                <button onclick="toggleModal('aboutModal')"
+                    class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 italic text-blue-400">ABOUT ME</h2>
+
+                <p class="text-base md:text-lg leading-7">
+                    I help business owners and busy web developers to design & develop creative websites
+                    that fit their vision and attract visitors to stay longer.
+                    Technologies and tools that I use to create such awesome websites:
+                </p>
+
+                <!-- Skills -->
+                <div class="flex flex-wrap mt-4">
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#JavaScript</span>
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#React.js</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#Figma</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#Node.js</span>
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#Jquery</span>
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#TAILWIND</span>
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#HTML&CSS</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#GitHub</span>
+                    <span
+                        class="bg-gray-700 text-white px-3 py-1 rounded-full m-1 text-sm md:text-base">#BOOTSTRAP</span>
+                </div>
+
+                <!-- MERN Stack -->
+                <h3 class="text-xl md:text-2xl font-semibold text-blue-400 mt-6">Frontend Developer</h3>
+                <div class="flex space-x-4 mt-3">
+                    <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" class="h-10">
+                    <div
+                        class="html-logo h-10 w-10 bg-orange-500 flex justify-center items-center text-white font-bold text-lg">
+                        HTML
+                    </div>
+                    <div
+                        class="css-logo h-10 w-10 bg-blue-500 flex justify-center items-center text-white font-bold text-lg">
+                        CSS
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Right Section (Image) -->
+            <div class="hidden md:block md:w-1/3 flex justify-center items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2010/2010047.png" alt="Developer"
+                    class="w-full max-w-sm">
+            </div>
+
+        </div>
+    </div>
+    <!-- Experience, Education, Projects Icons -->
+    <div class="mt-6 mb-6 flex gap-x-6 sm:gap-x-20 justify-center px-4">
+        <a onclick="toggleModal('experienceModal')"
+            class="bg-blue-500 px-4 py-2 rounded-full text-white hover:bg-blue-600 text-lg cursor-pointer animate-bounce">
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a onclick="toggleModal('educationModal')"
+            class="bg-blue-500 px-4 py-2 rounded-full text-white hover:bg-blue-600 text-lg cursor-pointer animate-bounce delay-200">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a onclick="toggleModal('projectsModal')"
+            class="bg-blue-500 px-4 py-2 rounded-full text-white hover:bg-blue-600 text-lg cursor-pointer animate-bounce delay-400">
+            <i class="fa-solid fa-folder"></i>
+        </a>
+    </div>
+    
+
+
+    <!-- Experience Modal -->
+    <div id="experienceModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden p-4">
+        <div class="bg-gray-900 text-white p-6 md:p-8 rounded-lg shadow-lg w-full md:w-3/4 max-w-2xl relative">
+            <button onclick="toggleModal('experienceModal')"
+                class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4 italic font-[cursive] text-blue-400 text-left pl-4">
+                Experience
+            </h2>
+
+            <div class="text-base md:text-lg leading-7">
+                <h3 class="text-lg md:text-xl font-bold text-purple-500 mb-2">Internship at Yoshops</h3>
+                <p class="text-gray-300">📅 <span class="font-semibold">Dec 2024 - Jan 2025</span></p>
+                <p class="mt-2">
+                    Successfully completed a *2-month internship at Yoshops* as a *Frontend Developer Intern*.
+                </p>
+                <p class="mt-2 text-gray-400">Key Skills: JavaScript , HTML&CSS</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden p-4">
+        <div class="bg-gray-900 text-white p-6 md:p-8 rounded-lg shadow-lg w-full md:w-3/4 max-w-2xl relative">
+            <button onclick="toggleModal('educationModal')"
+                class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4 italic font-[cursive] text-blue-400 text-left pl-4">
+                Education
+            </h2>
+
+            <div class="text-base md:text-lg leading-7">
+                <!-- MCA Education -->
+                <h3 class="text-lg md:text-xl font-bold text-purple-500 mb-2">Master of Computer Applications (MCA)</h3>
+                <p class="text-gray-300">🎓 <span class="font-semibold">AKTU University</span></p>
+                <p class="text-gray-400">📅 <span class="font-semibold">Currently Pursuing</span></p>
+                <p class="mt-2">
+                    Currently pursuing *MCA* with a focus on **Full-Stack Development.
+                </p>
+
+                <!-- BCA Education -->
+                <h3 class="text-lg md:text-xl font-bold text-purple-500 mt-6 mb-2">Bachelor of Computer Applications (BCA)
+                </h3>
+                <p class="text-gray-300">🎓 <span class="font-semibold">Kumaun University</span></p>
+                <p class="text-gray-400">📅 <span class="font-semibold">2020 - 2023</span></p>
+                <p class="mt-2">
+                    Completed *BCA* from Kumaun University, where I built a strong foundation in *programming and web
+                    development*.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Projects Modal -->
+    <div id="projectsModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden p-4">
+        <div class="bg-gray-900 text-white p-6 md:p-8 rounded-lg shadow-lg w-full md:w-3/4 max-w-2xl relative">
+            <button onclick="toggleModal('projectsModal')"
+                class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4 italic font-[cursive] text-blue-400 text-left pl-4">
+                Projects
+            </h2>
+            <div class="project">
+                <h3 class="text-xl font-semibold mb-2 font-cursive text-purple-500">Making News-Mag using Bootstrap & React</h3>
+
+                <p class="text-base md:text-lg leading-7 mb-4">
+                    This project demonstrates a news magazine website layout built using Bootstrap and React.
+                </p>
+                <a href="https://github.com/vivek-sys/News-Mag" target="_blank"
+                    class="text-blue-400 hover:underline">View Project on GitHub</a>
+            </div>
+            <div class="project mt-6">
+                <h3 class="text-xl font-semibold mb-2 font-cursive text-purple-500">Making Login-Sign-Up-page using React & React Router DOM</h3>
+                <p class="text-base md:text-lg leading-7 mb-4">
+                    This project showcases a Login/Sign-Up page built using React with React Router DOM for routing.
+                </p>
+                <a href="https://github.com/vivek-sys/Login-Sign-up-Project" target="_blank"
+                    class="text-blue-400 hover:underline">View Project on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
